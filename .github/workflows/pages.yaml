@@ -6,7 +6,8 @@ on:
       - master
 
 jobs:
-  github-actions:
+  github-pages:
+    name: Deploy GitHub Pages
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
