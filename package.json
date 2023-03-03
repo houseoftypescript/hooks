@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "React Hooks",
   "main": "dist/index.js",
-  "repository": "git@github.com:houseofmystery/hooks.git",
+  "repository": "git@github.com:houseoftypescript/hooks.git",
   "author": "hieudoanm <hieumdoan@gmail.com>",
   "license": "MIT",
   "private": true,

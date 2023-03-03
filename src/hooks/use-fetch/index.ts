@@ -13,7 +13,7 @@ type Action<T> =
   | { type: 'fetched'; payload: T }
   | { type: 'error'; payload: Error };
 
-const useFetch = <T = unknown>(
+export const useFetch = <T = unknown>(
   url?: string,
   options?: RequestInit
 ): State<T> => {

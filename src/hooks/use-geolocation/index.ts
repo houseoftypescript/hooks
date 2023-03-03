@@ -6,14 +6,14 @@ export const useGeolocation = (): {
 } => {
   // store error message in state
   const [position, setPosition] = useState<GeolocationPosition | null>(null);
-  const [error, setError] = useState('');
+  const [error, setError] = useState<string>('');
 
   const handleSuccess = (position: GeolocationPosition) => {
     setPosition(position);
   };
 
-  const handleError = (err: GeolocationPositionError) => {
-    setError(err.message);
+  const handleError = (error: GeolocationPositionError) => {
+    setError(error.message);
   };
 
   useEffect(() => {
